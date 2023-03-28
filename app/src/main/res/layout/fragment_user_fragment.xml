@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/titleuser"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:id="@+id/imguser"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/man"
+            android:layout_width="300px"
+            android:layout_height="300px"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginRight="10dp">
+        <ImageButton
+            android:id="@+id/imgbtnLogout"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logout"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            />
+        <ImageButton
+            android:layout_marginTop="3dp"
+            android:id="@+id/imgbtnchange"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:clickable="true"
+            android:background="@drawable/resetpassword"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/imgfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        app:cardElevation="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="5dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Thông tin"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="center"
+                    android:text="Tên: "
+                    android:textSize="22dp"
+                    android:textStyle="bold|normal"
+                    android:id="@+id/txtWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:editable="false"
+                    android:padding="2dp"
+                    android:id="@+id/editTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:background="@drawable/custom_edittext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txtgender"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính:"
+                    android:textSize="22dp"
+                    android:textStyle="bold|normal" />
+
+                <EditText
+                    android:id="@+id/editGender"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/custom_edittext"
+                    android:editable="false"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:gravity="center"
+                    android:text="BMI: "
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold|normal"
+                    android:id="@+id/txtBMI"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:editable="false"
+                    android:id="@+id/editBMI"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:background="@drawable/custom_edittext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Cân nặng: "
+                    android:textSize="22dp"
+                    android:textStyle="bold|normal"
+                    android:id="@+id/txtTen"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/editweight"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:background="@drawable/custom_edittext"
+                    android:editable="false" />
+                <TextView
+
+                    android:text="Chiều cao: "
+                    android:textSize="22dp"
+                    android:textStyle="bold|normal"
+                    android:id="@+id/txtHeigh"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:editable="false"
+                    android:id="@+id/editHeight"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:textAlignment="center"
+                    android:background="@drawable/custom_edittext"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnCapnhat"
+                android:text="Cập nhật"
+                android:textStyle="bold|normal"
+                android:shadowRadius="10"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardthongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        app:cardElevation="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="10dp"
+        android:visibility="invisible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật"
+                android:textStyle="bold|normal"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cân nặng: "
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textSize="22dp"/>
+                <EditText
+                    android:id="@+id/editCanNangupdate"
+                    android:layout_width="100dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chiều cao: "
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:textSize="22dp"/>
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/editChieuCaoupdate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <Button
+                android:id="@+id/Capnhatthongtin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:text="Cập nhât"
+                android:textStyle="bold|normal"
+                android:shadowRadius="10"/>
+            <Button
+                android:id="@+id/HuyUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:textStyle="bold|normal"
+                android:shadowRadius="10"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</ScrollView>

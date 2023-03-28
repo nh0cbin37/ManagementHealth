@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <VideoView
+                android:id="@+id/VideoVie"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        >
+
+            <TextView
+                android:id="@+id/txttenbaitap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenbaitap"
+                android:textColor="@color/black"
+                android:textStyle="normal|bold"
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/txtthoigiantap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thoigiantap"
+                android:textStyle="normal|bold"
+                android:textSize="15dp"
+
+               />
+        <ImageView
+            android:id="@+id/imgvidone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logodonewo"
+            android:visibility="invisible"/>
+
+
+
+        </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageWOdoneormove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+        android:layout_marginLeft="0.2in"
+        android:background="@drawable/arrow_workout" />
+</LinearLayout>

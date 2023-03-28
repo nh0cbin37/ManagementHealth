@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "150146859833",
+    "project_id": "tnq-care-health",
+    "storage_bucket": "tnq-care-health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150146859833:android:3291c8addcf7ffab219ee8",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150146859833-ko9ofioevp03aoaavfaq5rqtn2ebvvoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project",
+            "certificate_hash": "ad3e0f204d20d1d3d5f36e893194afbc034bc3a6"
+          }
+        },
+        {
+          "client_id": "150146859833-m6n4jelb72jn8ti4to3ao88sa118q2b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvb2minuKzxXceCIOsc4jRd1Jdpkfrhts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150146859833-m6n4jelb72jn8ti4to3ao88sa118q2b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

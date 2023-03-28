@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FoodActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/lnlayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imgfood"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/logofood"
+            android:textColor="#f00"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/layoutlnsettingFood"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageButton
+                android:id="@+id/imgSettingFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/createmenufood"
+                android:layout_margin="5dp"
+
+                />
+            <TextView
+                android:id="@+id/txttaomoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo mới"
+                android:textSize="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold|normal"
+              />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/imgfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+
+            android:background="@drawable/custom_edittext">
+            <LinearLayout
+                android:id="@+id/lnmenu"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+
+                android:padding="24dp">
+                <LinearLayout
+                    android:id="@+id/buoisang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buổi sáng"
+                        android:textStyle="bold|normal"
+                        android:textSize="30dp"/>
+                    <LinearLayout
+                        android:id="@+id/lnmonbuoisang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lnmon1buoisang"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoisang1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoisang1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnmon2buoisang"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoisang2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoisang2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnmon3buoisang"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoisang3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoisang3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buoitrua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buổi Trưa"
+                        android:textSize="30dp"
+                        android:textStyle="bold|normal" />
+                    <LinearLayout
+                        android:id="@+id/lnmonbuoitrua1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                            <LinearLayout
+                            android:id="@+id/lnmon1buoitrua"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoitrua1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoitrua1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lnmon2buoitrua"
+                                android:layout_width="90dp"
+                                android:layout_height="126dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/custom_edittext"
+                                android:backgroundTint="@color/yellow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imgbuoitrua2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user"
+                                    android:textAlignment="center" />
+
+                                <TextView
+                                    android:id="@+id/txtbuoitrua2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Sữa đặc" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lnmon3buoitrua"
+                                android:layout_width="90dp"
+                                android:layout_height="126dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/custom_edittext"
+                                android:backgroundTint="@color/yellow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imgbuoitrua3"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user"
+                                    android:textAlignment="center" />
+
+                                <TextView
+                                    android:id="@+id/txtbuoitrua3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Sữa đặc" />
+                            </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/lnmonbuoitrua2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lnmon4buoitrua"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoitrua4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoitrua4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnmon5buoitrua"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoitrua5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoitrua5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnmon6buoitrua"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoitrua6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoitrua6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/buoichieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buổi Chiều"
+                        android:textStyle="bold|normal"
+                        android:textSize="30dp"/>
+                    <LinearLayout
+                        android:id="@+id/lnmonbuoichieu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lnmon1buoichieu"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoichieu1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoichieu1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnmon2buoichieu"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoichieu2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoichieu2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnmon3buoichieu"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgbuoichieu3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtbuoichieu3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/thucphambosung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thục phẩm bổ sung"
+                        android:textStyle="bold|normal"
+                        android:textSize="30dp"/>
+                    <LinearLayout
+                        android:id="@+id/lnthucphambosung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/thucphambosung1"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgthucphambs1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtthucphambs1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/thucphambosung2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgthucphambs2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtthucphambs2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/thucphambosung3"
+                            android:layout_width="90dp"
+                            android:layout_height="126dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_edittext"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgthucphambs3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/user"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtthucphambs3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sữa đặc" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

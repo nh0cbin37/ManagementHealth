@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="3.9in"
+         />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:layout_below="@+id/frame_layout_container"
+        app:menu="@menu/menunavigation" />
+
+</RelativeLayout>
+
+<!--    <TabHost-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:id="@+id/tabhost"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:orientation="vertical">-->
+
+
+
+<!--            <FrameLayout-->
+<!--                android:id="@android:id/tabcontent"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="0dip"-->
+<!--                android:layout_weight="0"/>-->
+
+<!--                &lt;!&ndash; add your tab content here &ndash;&gt;-->
+
+
+<!--            <TabWidget-->
+<!--                android:id="@android:id/tabs"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </LinearLayout>-->
+
+<!--    </TabHost>-->
+
+
