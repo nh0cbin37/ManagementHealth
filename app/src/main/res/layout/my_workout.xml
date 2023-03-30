@@ -15,6 +15,7 @@
         app:cardCornerRadius="20dp"
         android:background="@drawable/border">
             <VideoView
+
                 android:id="@+id/VideoVie"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
