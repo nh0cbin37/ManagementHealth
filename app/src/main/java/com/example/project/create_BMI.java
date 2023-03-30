@@ -32,6 +32,13 @@ public class create_BMI extends AppCompatActivity {
         btnxacnhan = (Button) findViewById(R.id.btnxacnhan);
         btnthoat = (Button) findViewById(R.id.thoat);
         radiGr = (RadioGroup)findViewById(R.id.radiGoGender);
+        btnthoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(create_BMI.this,Login.class);
+                startActivity(intent);
+            }
+        });
         btnxacnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
