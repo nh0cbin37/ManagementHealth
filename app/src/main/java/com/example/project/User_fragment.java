@@ -105,7 +105,7 @@ public class User_fragment extends Fragment {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Warning!");
+                builder.setTitle("Cảnh báo!");
                 builder.setIcon(R.drawable.warninglogout);
                 builder.setMessage("Bạn có chắc chắn đăng xuất!!!");
 

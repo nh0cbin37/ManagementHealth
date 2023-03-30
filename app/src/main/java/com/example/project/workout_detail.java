@@ -111,7 +111,7 @@ public class workout_detail extends AppCompatActivity {
 
                         }.start();
 
-                        btnstarOrDone.setText("Xong!!!");
+                        btnstarOrDone.setText("Xong");
                     } else {
 
 
