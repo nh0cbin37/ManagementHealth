@@ -77,6 +77,14 @@
                     android:layout_height="200dp"
                     android:layout_gravity="center"/>
                 <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả chi tiết"
+                    android:textSize="25dp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"/>
+                <TextView
                     android:id="@+id/detail"
                     android:textSize="20dp"
                     android:textStyle="normal|bold"
@@ -88,6 +96,7 @@
         </androidx.cardview.widget.CardView>
         <TableLayout
             android:id="@+id/tbl1"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TableRow
@@ -100,12 +109,14 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Bắt đầu"
+                    android:background="@color/grays"
                     android:textStyle="bold|normal"
                     android:layout_marginRight="20dp"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnthoat"
+                    android:background="@color/grays"
                     android:textStyle="bold|normal"
                     android:text="Thoát"/>
 

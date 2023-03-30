@@ -2,10 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/custom_edittext"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
         app:cardCornerRadius="20dp"
         android:background="@drawable/border">
             <VideoView
@@ -16,9 +22,16 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
+
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lntitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="7dp"
         android:gravity="center"
         >
 
@@ -39,22 +52,23 @@
                 android:textSize="15dp"
 
                />
-        <ImageView
-            android:id="@+id/imgvidone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/logodonewo"
-            android:visibility="invisible"/>
-
 
 
         </LinearLayout>
-
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lntitle"
+        android:id="@+id/imgvidone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logodonewo"
+        android:visibility="invisible"/></LinearLayout>
     <ImageButton
         android:id="@+id/imageWOdoneormove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
        android:layout_marginTop="25dp"
-        android:layout_marginLeft="0.2in"
+        android:layout_marginLeft="0.18in"
         android:background="@drawable/arrow_workout" />
 </LinearLayout>

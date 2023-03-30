@@ -7,10 +7,11 @@
     tools:context=".create_BMI"
     android:orientation="vertical"
     android:gravity="center">
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="500px"
-        android:background="@drawable/logonhapthongtin"/>
+        android:layout_height="220dp"
+        android:background="@drawable/logonhapthongtin" />
 
     <TextView
         android:layout_width="307dp"
@@ -21,7 +22,7 @@
         android:textStyle="bold|normal"
         android:gravity="center"
         android:layout_marginBottom="5px"
-        android:layout_marginTop="80px"
+       android:layout_marginTop="45dp"
         />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -94,7 +95,7 @@
             android:background="@drawable/custom_edittext"
             android:drawableLeft="@drawable/ic_baseline_scale_24"
             android:drawablePadding="8dp"
-            android:hint="Weight"
+            android:hint="Cân nặng"
             android:inputType="number"
             android:padding="8dp"
             android:textColor="@color/black"
@@ -110,7 +111,7 @@
             android:background="@drawable/custom_edittext"
             android:drawableLeft="@drawable/ic_baseline_height_24"
             android:drawablePadding="8dp"
-            android:hint="Height"
+            android:hint="Chiều cao"
             android:inputType="number"
             android:padding="8dp"
             android:textColor="@color/black"

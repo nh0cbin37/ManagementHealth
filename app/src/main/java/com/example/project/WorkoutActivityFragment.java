@@ -112,7 +112,7 @@ public void getWorkoutListDe(String currentime) {
 //            getBTcuaUser.moveToNext();
 //        }
         db = getActivity().openOrCreateDatabase(Login.DATABASE_NAME,MODE_PRIVATE,null);
-        Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang = ? and NgayTao = ? ",new String[]{MainActivity.ID_USER+"","De",currentime}, null);
+        Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang = ? and NgayTao = ? limit 1 ",new String[]{MainActivity.ID_USER+"","De",currentime}, null);
         c.moveToFirst();
         while (!c.isAfterLast()) {
             WorkoutlistDe.add(new Workout(c.getInt(0) , c.getString(1) + "", c.getInt(2), c.getString(3) + "", c.getString(4) + "",c.getString(5),c.getString(6)+""));
@@ -130,7 +130,7 @@ public void getWorkoutListDe(String currentime) {
             //Studentlist.add(new Room(""));
 
             db = getActivity().openOrCreateDatabase(Login.DATABASE_NAME, MODE_PRIVATE, null);
-            Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang=? and NgayTao = ?",new String[]{MainActivity.ID_USER+"","TB",currentime}, null);
+            Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang=? and NgayTao = ? limit 1 ",new String[]{MainActivity.ID_USER+"","TB",currentime}, null);
             c.moveToFirst();
             while (!c.isAfterLast()) {
                 WorkoutlistTB.add(new Workout(c.getInt(0) , c.getString(1) + "", c.getInt(2), c.getString(3) + "", c.getString(4) + "",c.getString(5),c.getString(6)+""));
@@ -148,7 +148,7 @@ public void getWorkoutListDe(String currentime) {
             //Studentlist.add(new Room(""));
 
             db = getActivity().openOrCreateDatabase(Login.DATABASE_NAME, MODE_PRIVATE, null);
-            Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang=? and NgayTao = ?",new String[]{MainActivity.ID_USER+"","Kho",currentime}, null);
+            Cursor c = db.rawQuery("select BAITAP.* from BAITAP,BAITAPCUATUNGID where BAITAP.Id_Practice = BAITAPCUATUNGID.Id_Pratice and Id_User = ? and Rang=? and NgayTao = ? limit 1 ",new String[]{MainActivity.ID_USER+"","Kho",currentime}, null);
             c.moveToFirst();
             while (!c.isAfterLast()) {
                 WorkoutlistKho.add(new Workout(c.getInt(0), c.getString(1) + "", c.getInt(2), c.getString(3) + "", c.getString(4) + "",c.getString(5),c.getString(6)+""));

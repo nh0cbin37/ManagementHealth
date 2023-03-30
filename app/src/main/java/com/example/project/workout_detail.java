@@ -90,26 +90,42 @@ public class workout_detail extends AppCompatActivity {
                             }
 
                             public void onFinish() {
-                                txttimecountdown.setText("done!");
+                                txttimecountdown.setText("Hết thời gian!");
+                                btnstarOrDone.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        db = openOrCreateDatabase(Login.DATABASE_NAME, MODE_PRIVATE, null);
+                                        ContentValues values = new ContentValues();
+                                        values.put("Status", 1);
+                                        db.update("BAITAPCUATUNGID", values, "ID_User=? and Id_Pratice=? and NgayTao=?", new String[]{MainActivity.ID_USER + "", arrWO.get(vitri).getId_practice() + "", currentTime + ""});
+
+                                        //lam tiep
+                                        Intent intent = new Intent(workout_detail.this, MainActivity.class);
+                                        MainActivity.countshow = 1;
+                                        startActivity(intent);
+                                        Toast.makeText(workout_detail.this, "Đã hoàn thành bài tập", Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    }
+                                });
                             }
 
                         }.start();
 
-                        btnstarOrDone.setText("Done");
+                        btnstarOrDone.setText("Xong!!!");
                     } else {
 
 
-                            db = openOrCreateDatabase(Login.DATABASE_NAME, MODE_PRIVATE, null);
-                            ContentValues values = new ContentValues();
-                            values.put("Status", 1);
-                            db.update("BAITAPCUATUNGID", values, "ID_User=? and Id_Pratice=? and NgayTao=?", new String[]{MainActivity.ID_USER + "", arrWO.get(vitri).getId_practice() + "", currentTime + ""});
-
-                            //lam tiep
-                            Intent intent = new Intent(workout_detail.this, MainActivity.class);
-                            MainActivity.countshow = 1;
-                            startActivity(intent);
-                            Toast.makeText(workout_detail.this, "Đã hoàn thành bài tập", Toast.LENGTH_SHORT).show();
-                            finish();
+//                            db = openOrCreateDatabase(Login.DATABASE_NAME, MODE_PRIVATE, null);
+//                            ContentValues values = new ContentValues();
+//                            values.put("Status", 1);
+//                            db.update("BAITAPCUATUNGID", values, "ID_User=? and Id_Pratice=? and NgayTao=?", new String[]{MainActivity.ID_USER + "", arrWO.get(vitri).getId_practice() + "", currentTime + ""});
+//
+//                            //lam tiep
+//                            Intent intent = new Intent(workout_detail.this, MainActivity.class);
+//                            MainActivity.countshow = 1;
+//                            startActivity(intent);
+//                            Toast.makeText(workout_detail.this, "Đã hoàn thành bài tập", Toast.LENGTH_SHORT).show();
+//                            finish();
                         }
                     i++;
 
@@ -123,7 +139,8 @@ public class workout_detail extends AppCompatActivity {
         btnclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(workout_detail.this,WorkoutActivityFragment.class);
+                startActivity(intent);
             }
         });
     }
